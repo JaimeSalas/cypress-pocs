@@ -1,0 +1,33 @@
+{
+  "name": "cypress-pocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p -l start:dev",
+    "start:dev": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:e2e": "cypress open",
+    "test:e2e": "npm run start -- start:e2e",
+    "test:e2e:ci": "npm run start -- -r start:e2e:ci",
+    "start:e2e:ci": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaimeSalas/cypress-pocs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaimeSalas/cypress-pocs/issues"
+  },
+  "homepage": "https://github.com/JaimeSalas/cypress-pocs#readme",
+  "dependencies": {
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
